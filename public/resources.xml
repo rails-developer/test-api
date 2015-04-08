@@ -1,0 +1,8 @@
+<resourceset>
+  <resource>
+    <title>test</title>
+    <dob>01-01-2015</dob>
+    <iso>iso-2005</iso>
+    <price>$1000</price>
+  </resource>
+</resourceset>

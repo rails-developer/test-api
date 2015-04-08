@@ -1,0 +1,17 @@
+class Api::V1::HomeController < Api::V1::BaseController
+  before_filter :authenticate_api_master!
+
+  def show
+    begin
+      
+        render json: {:success => true, :message => "you have run successfully"}, status: 201
+      
+      
+      
+    rescue => e
+      handle_exception
+    end
+  end
+  
+  
+end
