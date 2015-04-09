@@ -12,10 +12,10 @@ RSpec.describe Api::V1::ResourcesController, :type => :controller do
 
    context 'show resources data' do
      it 'returns xml file params into json response' do
-       expect(json["title"]).to include("test")
-       expect(json["dob"]).to include("01-01-2015")
-       expect(json["iso"]).to include("iso-2005")
-       expect(json["price"]).to include("$1000")
+       expect(json["param_1"]).to include("test")
+       expect(json["param_2"]).to include("01-01-2015")
+       expect(json["some_code"]).to include("iso-2005")
+       expect(json["some_price_param"]).to include("$1000")
      end
    end
  end
